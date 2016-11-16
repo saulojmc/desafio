@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
-
+    //mark: - IBOUTLET
     @IBOutlet weak var flagPicker: UIPickerView!
     @IBOutlet weak var flagPickerBtn: UIButton!
     @IBOutlet weak var cvvLabel: UILabel!
@@ -17,7 +18,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var valorLabel: UILabel!
     
     @IBOutlet weak var valorField: UITextField!
+    //Contants das bandeiras
     let flags = ["MasterCard","Visa", "American Express"]
+    
+    //mark: - Properties
+    fileprivate var tags: [strings?]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +35,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    //mark: - IBACtions
     @IBAction func flagBtnPressed(_ sender: AnyObject) {
         flagPicker.isHidden = false
         cvvLabel.isHidden = true
@@ -69,12 +74,4 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
 }
 // Networking calls
-extension ViewController {
-    func uploadImage(image: UIImage, progress: (_ percent: Float) -> Void,
-                     completion: (_ tags: [String], _ colors: [PhotoColor]) -> Void) {
-        guard let imageData = UIImageJPEGRepresentation(image, 0.5) else {
-            print("Could not get JPEG representation of UIImage")
-            return
-        }
-    }
-}
+
