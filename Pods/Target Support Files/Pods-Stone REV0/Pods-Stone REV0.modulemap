@@ -1,0 +1,6 @@
+framework module Pods_Stone_REV0 {
+  umbrella header "Pods-Stone REV0-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27762BA31DDA97950019B5C2"
-               BuildableName = "Stone REV0.app"
-               BlueprintName = "Stone REV0"
-               ReferencedContainer = "container:Stone REV0.xcodeproj">
+               BlueprintIdentifier = "1497A1A50261C8BB103571779322D61E"
+               BuildableName = "Pods_Stone_REV0.framework"
+               BlueprintName = "Pods-Stone REV0"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27762BA31DDA97950019B5C2"
-            BuildableName = "Stone REV0.app"
-            BlueprintName = "Stone REV0"
-            ReferencedContainer = "container:Stone REV0.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27762BA31DDA97950019B5C2"
-            BuildableName = "Stone REV0.app"
-            BlueprintName = "Stone REV0"
-            ReferencedContainer = "container:Stone REV0.xcodeproj">
+            BlueprintIdentifier = "1497A1A50261C8BB103571779322D61E"
+            BuildableName = "Pods_Stone_REV0.framework"
+            BlueprintName = "Pods-Stone REV0"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27762BA31DDA97950019B5C2"
-            BuildableName = "Stone REV0.app"
-            BlueprintName = "Stone REV0"
-            ReferencedContainer = "container:Stone REV0.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

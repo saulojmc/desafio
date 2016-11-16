@@ -12,9 +12,11 @@
 		27762BAD1DDA97950019B5C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27762BAB1DDA97950019B5C2 /* Main.storyboard */; };
 		27762BAF1DDA97950019B5C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27762BAE1DDA97950019B5C2 /* Assets.xcassets */; };
 		27762BB21DDA97950019B5C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27762BB01DDA97950019B5C2 /* LaunchScreen.storyboard */; };
+		B4B74673DDA93700B0A3BFD6 /* Pods_Stone_REV0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246F8C112CE09C5A8835FE34 /* Pods_Stone_REV0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		246F8C112CE09C5A8835FE34 /* Pods_Stone_REV0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stone_REV0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27762BA41DDA97950019B5C2 /* Stone REV0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stone REV0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27762BA71DDA97950019B5C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27762BA91DDA97950019B5C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		27762BAE1DDA97950019B5C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27762BB11DDA97950019B5C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27762BB31DDA97950019B5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8AA19C88445BB2641F9809 /* Pods-Stone REV0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stone REV0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stone REV0/Pods-Stone REV0.debug.xcconfig"; sourceTree = "<group>"; };
+		FE92B6168FD82015000FCAE4 /* Pods-Stone REV0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stone REV0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stone REV0/Pods-Stone REV0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B74673DDA93700B0A3BFD6 /* Pods_Stone_REV0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				27762BA61DDA97950019B5C2 /* Stone REV0 */,
 				27762BA51DDA97950019B5C2 /* Products */,
+				4A133E8C037ED7AC58E7C4A1 /* Pods */,
+				E352F26E8D90404F63A4E76C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "Stone REV0";
 			sourceTree = "<group>";
 		};
+		4A133E8C037ED7AC58E7C4A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB8AA19C88445BB2641F9809 /* Pods-Stone REV0.debug.xcconfig */,
+				FE92B6168FD82015000FCAE4 /* Pods-Stone REV0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E352F26E8D90404F63A4E76C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				246F8C112CE09C5A8835FE34 /* Pods_Stone_REV0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27762BB61DDA97950019B5C2 /* Build configuration list for PBXNativeTarget "Stone REV0" */;
 			buildPhases = (
+				90421A63E16FBDF43060FC8E /* [CP] Check Pods Manifest.lock */,
 				27762BA01DDA97950019B5C2 /* Sources */,
 				27762BA11DDA97950019B5C2 /* Frameworks */,
 				27762BA21DDA97950019B5C2 /* Resources */,
+				261FC26E616EC5ED9658642D /* [CP] Embed Pods Frameworks */,
+				424A4370A334DA5D16117D04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -91,7 +118,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Mr. Robot";
 				TargetAttributes = {
 					27762BA31DDA97950019B5C2 = {
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		261FC26E616EC5ED9658642D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stone REV0/Pods-Stone REV0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		424A4370A334DA5D16117D04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stone REV0/Pods-Stone REV0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90421A63E16FBDF43060FC8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27762BA01DDA97950019B5C2 /* Sources */ = {
@@ -181,6 +256,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +307,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -258,6 +335,7 @@
 		};
 		27762BB71DDA97950019B5C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8AA19C88445BB2641F9809 /* Pods-Stone REV0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Stone REV0/Info.plist";
@@ -270,6 +348,7 @@
 		};
 		27762BB81DDA97950019B5C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE92B6168FD82015000FCAE4 /* Pods-Stone REV0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Stone REV0/Info.plist";
@@ -299,6 +378,7 @@
 				27762BB81DDA97950019B5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
